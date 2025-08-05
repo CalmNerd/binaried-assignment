@@ -10,7 +10,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ className }) => {
   return (
     <header className={cn(
-      'bg-white/10 backdrop-blur-sm border-b border-blue-200/40 px-4 sm:px-6 py-2 flex items-center justify-end',
+      'sticky top-0 z-20 bg-white/10 backdrop-blur-sm border-b border-blue-200/40 px-4 sm:px-6 py-2 flex items-center justify-end',
       className
     )}>
       {/* Mobile Title - Only show on small screens */}

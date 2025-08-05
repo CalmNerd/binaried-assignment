@@ -1,26 +1,126 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary-50: #E6F3FF;
+  --color-primary-100: #CCE7FF;
+  --color-primary-200: #99CFFF;
+  --color-primary-300: #66B7FF;
+  --color-primary-400: #339FFF;
+  --color-primary-500: #007AFF;
+  --color-primary-600: #0062CC;
+  --color-primary-700: #004A99;
+  --color-primary-800: #003166;
+  --color-primary-900: #001933;
+  
+  --color-purple-accent: #6366F1;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  
+  --color-border: 220 13% 91%;
+  --color-input: 220 13% 91%;
+  --color-ring: 220 13% 91%;
+  --color-background: 0 0% 100%;
+  --color-foreground: 220 13% 9%;
+  --color-destructive: 0 84% 60%;
+  --color-destructive-foreground: 0 0% 98%;
+  --color-muted: 220 14% 96%;
+  --color-muted-foreground: 220 9% 46%;
+  --color-accent: 220 14% 96%;
+  --color-accent-foreground: 220 9% 46%;
+  --color-popover: 0 0% 100%;
+  --color-popover-foreground: 220 13% 9%;
+  --color-card: 0 0% 100%;
+  --color-card-foreground: 220 13% 9%;
+  
+  --radius: 0.5rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --primary-blue: #007AFF;
+    --purple-accent: #6366F1;
+    --success-green: #10B981;
+    --warning-orange: #F59E0B;
+    --error-red: #EF4444;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .glass-morphism {
+    @apply backdrop-blur-xl bg-white/80;
+  }
+  
+  .gradient-button {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700;
+  }
+  
+  .status-dot {
+    @apply w-2 h-2 rounded-full;
+  }
+  
+  .status-dot.active {
+    @apply bg-green-500;
+  }
+  
+  .status-dot.inactive {
+    @apply bg-red-500;
+  }
+  
+  .status-dot.pending {
+    @apply bg-orange-500;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom Scrollbar Styles */
+@layer utilities {
+  /* For Webkit browsers (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 hover:bg-gray-400 transition-colors;
+  }
+
+  /* Hide scrollbar buttons */
+  ::-webkit-scrollbar-button {
+    @apply hidden;
+  }
+
+  /* For Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #D1D5DB #F3F4F6;
+  }
+}
+
+/* Hide scrollbars while maintaining functionality */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 }

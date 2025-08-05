@@ -1,0 +1,542 @@
+{
+  "societies": [
+    { "id": 1, "name": "Green Valley Residency", "unitCount": 245 },
+    { "id": 2, "name": "Palm Grove Society", "unitCount": 320 },
+    { "id": 3, "name": "Sunshine Apartments", "unitCount": 180 },
+    { "id": 4, "name": "Riverside Heights", "unitCount": 420 },
+    { "id": 5, "name": "Oakwood Gardens", "unitCount": 156 },
+    { "id": 6, "name": "Marina Bay Complex", "unitCount": 280 },
+    { "id": 7, "name": "Hillcrest Manor", "unitCount": 195 },
+    { "id": 8, "name": "Central Park Plaza", "unitCount": 350 },
+    { "id": 9, "name": "Lakeside Villas", "unitCount": 120 },
+    { "id": 10, "name": "Mountain View Estates", "unitCount": 275 },
+    { "id": 11, "name": "Downtown Towers", "unitCount": 480 },
+    { "id": 12, "name": "Garden Court", "unitCount": 165 },
+    { "id": 13, "name": "Royal Palms", "unitCount": 220 },
+    { "id": 14, "name": "Emerald Heights", "unitCount": 310 },
+    { "id": 15, "name": "Golden Gate Residences", "unitCount": 190 },
+    { "id": 16, "name": "Silver Lake Community", "unitCount": 285 },
+    { "id": 17, "name": "Crystal Springs", "unitCount": 210 },
+    { "id": 18, "name": "Maple Ridge Estates", "unitCount": 340 },
+    { "id": 19, "name": "Willow Creek Village", "unitCount": 175 },
+    { "id": 20, "name": "Pine Valley Heights", "unitCount": 230 }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "email": "sarah.johnson@platform.com",
+      "phone": "+1 (555) 123-4567",
+      "status": "active",
+      "assignedSocieties": [1, 2, 3],
+      "lastActivity": "2025-01-25T16:00:00Z",
+      "createdAt": "2024-08-15T09:00:00Z",
+      "loginCount": 156,
+      "ticketsResolved": 89,
+      "avatar": "/avatar.png",
+      "recentActivities": [
+        {
+          "id": 1,
+          "action": "Approved resident registration",
+          "society": "Green Valley Residency",
+          "timestamp": "2025-01-25T10:30:00Z",
+          "type": "approval"
+        },
+        {
+          "id": 2,
+          "action": "Updated unit status",
+          "society": "Sunshine Apartments",
+          "timestamp": "2025-01-25T09:15:00Z",
+          "type": "update"
+        },
+        {
+          "id": 3,
+          "action": "Resolved maintenance complaint",
+          "society": "Palm Grove Society",
+          "timestamp": "2025-01-24T14:20:00Z",
+          "type": "resolution"
+        },
+        {
+          "id": 4,
+          "action": "Created new poll",
+          "society": "Green Valley Residency",
+          "timestamp": "2025-01-24T11:45:00Z",
+          "type": "creation"
+        },
+        {
+          "id": 5,
+          "action": "Updated community guidelines",
+          "society": "Green Valley Residency",
+          "timestamp": "2025-01-24T11:45:00Z", 
+          "type": "update"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Michael Chen",
+      "email": "michael.chen@platform.com",
+      "phone": "+1 (555) 234-5678",
+      "status": "active",
+      "assignedSocieties": [4, 5],
+      "lastActivity": "2025-01-25T15:30:00Z",
+      "createdAt": "2024-09-20T10:30:00Z",
+      "loginCount": 203,
+      "ticketsResolved": 134,
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      "recentActivities": [
+        {
+          "id": 5,
+          "action": "Processed payment",
+          "society": "Riverside Heights",
+          "timestamp": "2025-01-25T15:30:00Z",
+          "type": "approval"
+        },
+        {
+          "id": 6,
+          "action": "Updated maintenance schedule",
+          "society": "Oakwood Gardens",
+          "timestamp": "2025-01-25T13:45:00Z",
+          "type": "update"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Emily Rodriguez",
+      "email": "emily.rodriguez@platform.com",
+      "phone": "+1 (555) 345-6789",
+      "status": "inactive",
+      "assignedSocieties": [6],
+      "lastActivity": "2024-12-15T08:00:00Z",
+      "createdAt": "2024-07-10T14:15:00Z",
+      "loginCount": 87,
+      "ticketsResolved": 45,
+      "recentActivities": [
+        {
+          "id": 7,
+          "action": "Last login",
+          "society": "Marina Bay Complex",
+          "timestamp": "2024-12-15T08:00:00Z",
+          "type": "update"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "David Kim",
+      "email": "david.kim@platform.com",
+      "phone": "+1 (555) 456-7890",
+      "status": "pending",
+      "assignedSocieties": [7, 8],
+      "lastActivity": "Never",
+      "createdAt": "2025-01-20T16:00:00Z",
+      "loginCount": 0,
+      "ticketsResolved": 0,
+      "recentActivities": []
+    },
+    {
+      "id": 5,
+      "name": "Lisa Thompson",
+      "email": "lisa.thompson@platform.com",
+      "phone": "+1 (555) 567-8901",
+      "status": "active",
+      "assignedSocieties": [9, 10, 11],
+      "lastActivity": "2025-01-25T14:45:00Z",
+      "createdAt": "2024-06-05T11:20:00Z",
+      "loginCount": 298,
+      "ticketsResolved": 187,
+      "avatar": "/avatar.png",
+      "recentActivities": [
+        {
+          "id": 8,
+          "action": "Approved visitor registration",
+          "society": "Downtown Towers",
+          "timestamp": "2025-01-25T14:45:00Z",
+          "type": "approval"
+        },
+        {
+          "id": 9,
+          "action": "Updated community guidelines",
+          "society": "Mountain View Estates",
+          "timestamp": "2025-01-25T12:30:00Z",
+          "type": "update"
+        },
+        {
+          "id": 10,
+          "action": "Resolved parking dispute",
+          "society": "Lakeside Villas",
+          "timestamp": "2025-01-24T16:15:00Z",
+          "type": "resolution"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "James Wilson",
+      "email": "james.wilson@platform.com",
+      "phone": "+1 (555) 678-9012",
+      "status": "active",
+      "assignedSocieties": [12, 13],
+      "lastActivity": "2025-01-25T13:20:00Z",
+      "createdAt": "2024-10-12T09:45:00Z",
+      "loginCount": 142,
+      "ticketsResolved": 98,
+      "recentActivities": [
+        {
+          "id": 11,
+          "action": "Created maintenance request",
+          "society": "Garden Court",
+          "timestamp": "2025-01-25T13:20:00Z",
+          "type": "creation"
+        },
+        {
+          "id": 12,
+          "action": "Updated resident profile",
+          "society": "Royal Palms",
+          "timestamp": "2025-01-25T10:15:00Z",
+          "type": "update"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Maria Garcia",
+      "email": "maria.garcia@platform.com",
+      "phone": "+1 (555) 789-0123",
+      "status": "active",
+      "assignedSocieties": [14, 15],
+      "lastActivity": "2025-01-25T11:30:00Z",
+      "createdAt": "2024-11-08T15:30:00Z",
+      "loginCount": 178,
+      "ticketsResolved": 112,
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      "recentActivities": [
+        {
+          "id": 13,
+          "action": "Approved maintenance work",
+          "society": "Emerald Heights",
+          "timestamp": "2025-01-25T11:30:00Z",
+          "type": "approval"
+        },
+        {
+          "id": 14,
+          "action": "Updated community calendar",
+          "society": "Golden Gate Residences",
+          "timestamp": "2025-01-25T09:45:00Z",
+          "type": "update"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Robert Taylor",
+      "email": "robert.taylor@platform.com",
+      "phone": "+1 (555) 890-1234",
+      "status": "pending",
+      "assignedSocieties": [1],
+      "lastActivity": "Never",
+      "createdAt": "2025-01-22T12:00:00Z",
+      "loginCount": 0,
+      "ticketsResolved": 0,
+      "recentActivities": []
+    },
+    {
+      "id": 9,
+      "name": "Jennifer Lee",
+      "email": "jennifer.lee@platform.com",
+      "phone": "+1 (555) 901-2345",
+      "status": "active",
+      "assignedSocieties": [16, 17],
+      "lastActivity": "2025-01-25T12:15:00Z",
+      "createdAt": "2024-05-15T08:30:00Z",
+      "loginCount": 245,
+      "ticketsResolved": 156,
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
+      "recentActivities": [
+        {
+          "id": 15,
+          "action": "Processed maintenance request",
+          "society": "Silver Lake Community",
+          "timestamp": "2025-01-25T12:15:00Z",
+          "type": "approval"
+        },
+        {
+          "id": 16,
+          "action": "Updated resident directory",
+          "society": "Crystal Springs",
+          "timestamp": "2025-01-25T10:30:00Z",
+          "type": "update"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Alex Martinez",
+      "email": "alex.martinez@platform.com",
+      "phone": "+1 (555) 012-3456",
+      "avatar": "/avatar.png",
+      "status": "active",
+      "assignedSocieties": [18, 19],
+      "lastActivity": "2025-01-25T11:45:00Z",
+      "createdAt": "2024-08-22T14:20:00Z",
+      "loginCount": 189,
+      "ticketsResolved": 123,
+      "recentActivities": [
+        {
+          "id": 17,
+          "action": "Approved visitor pass",
+          "society": "Maple Ridge Estates",
+          "timestamp": "2025-01-25T11:45:00Z",
+          "type": "approval"
+        },
+        {
+          "id": 18,
+          "action": "Resolved noise complaint",
+          "society": "Willow Creek Village",
+          "timestamp": "2025-01-25T09:20:00Z",
+          "type": "resolution"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Rachel Green",
+      "email": "rachel.green@platform.com",
+      "phone": "+1 (555) 123-4567",
+      "status": "inactive",
+      "assignedSocieties": [20],
+      "lastActivity": "2024-11-30T16:00:00Z",
+      "createdAt": "2024-03-10T11:15:00Z",
+      "loginCount": 67,
+      "ticketsResolved": 34,
+      "recentActivities": [
+        {
+          "id": 19,
+          "action": "Last activity",
+          "society": "Pine Valley Heights",
+          "timestamp": "2024-11-30T16:00:00Z",
+          "type": "update"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Thomas Brown",
+      "email": "thomas.brown@platform.com",
+      "phone": "+1 (555) 234-5678",
+      "status": "active",
+      "assignedSocieties": [1, 2, 3, 4],
+      "lastActivity": "2025-01-25T15:20:00Z",
+      "createdAt": "2024-07-05T09:45:00Z",
+      "loginCount": 312,
+      "ticketsResolved": 198,
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      "recentActivities": [
+        {
+          "id": 20,
+          "action": "Updated community rules",
+          "society": "Green Valley Residency",
+          "timestamp": "2025-01-25T15:20:00Z",
+          "type": "update"
+        },
+        {
+          "id": 21,
+          "action": "Processed bulk payment",
+          "society": "Palm Grove Society",
+          "timestamp": "2025-01-25T13:45:00Z",
+          "type": "approval"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Amanda White",
+      "email": "amanda.white@platform.com",
+      "phone": "+1 (555) 345-6789",
+      "status": "pending",
+      "assignedSocieties": [5, 6],
+      "lastActivity": "Never",
+      "createdAt": "2025-01-23T10:00:00Z",
+      "loginCount": 0,
+      "ticketsResolved": 0,
+      "recentActivities": []
+    },
+    {
+      "id": 14,
+      "name": "Daniel Clark",
+      "email": "daniel.clark@platform.com",
+      "phone": "+1 (555) 456-7890",
+      "status": "active",
+      "assignedSocieties": [7, 8, 9],
+      "lastActivity": "2025-01-25T14:30:00Z",
+      "createdAt": "2024-09-12T16:30:00Z",
+      "loginCount": 267,
+      "ticketsResolved": 145,
+      "recentActivities": [
+        {
+          "id": 22,
+          "action": "Approved maintenance work",
+          "society": "Hillcrest Manor",
+          "timestamp": "2025-01-25T14:30:00Z",
+          "type": "approval"
+        },
+        {
+          "id": 23,
+          "action": "Updated parking allocation",
+          "society": "Central Park Plaza",
+          "timestamp": "2025-01-25T12:15:00Z",
+          "type": "update"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Sophie Anderson",
+      "email": "sophie.anderson@platform.com",
+      "phone": "+1 (555) 567-8901",
+      "status": "active",
+      "assignedSocieties": [10, 11, 12],
+      "lastActivity": "2025-01-25T13:10:00Z",
+      "createdAt": "2024-06-20T13:45:00Z",
+      "loginCount": 234,
+      "ticketsResolved": 167,
+      "avatar": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face",
+      "recentActivities": [
+        {
+          "id": 24,
+          "action": "Created community event",
+          "society": "Mountain View Estates",
+          "timestamp": "2025-01-25T13:10:00Z",
+          "type": "creation"
+        },
+        {
+          "id": 25,
+          "action": "Resolved security issue",
+          "society": "Downtown Towers",
+          "timestamp": "2025-01-25T11:30:00Z",
+          "type": "resolution"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Kevin Johnson",
+      "email": "kevin.johnson@platform.com",
+      "phone": "+1 (555) 678-9012",
+      "status": "inactive",
+      "assignedSocieties": [13],
+      "lastActivity": "2024-10-15T09:00:00Z",
+      "createdAt": "2024-04-08T15:20:00Z",
+      "loginCount": 89,
+      "ticketsResolved": 56,
+      "recentActivities": [
+        {
+          "id": 26,
+          "action": "Last login",
+          "society": "Royal Palms",
+          "timestamp": "2024-10-15T09:00:00Z",
+          "type": "update"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Nicole Davis",
+      "email": "nicole.davis@platform.com",
+      "phone": "+1 (555) 789-0123",
+      "status": "active",
+      "assignedSocieties": [14, 15, 16],
+      "lastActivity": "2025-01-25T12:45:00Z",
+      "createdAt": "2024-08-30T11:10:00Z",
+      "loginCount": 198,
+      "ticketsResolved": 134,
+      "recentActivities": [
+        {
+          "id": 27,
+          "action": "Approved renovation request",
+          "society": "Emerald Heights",
+          "timestamp": "2025-01-25T12:45:00Z",
+          "type": "approval"
+        },
+        {
+          "id": 28,
+          "action": "Updated amenity schedule",
+          "society": "Golden Gate Residences",
+          "timestamp": "2025-01-25T10:20:00Z",
+          "type": "update"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Ryan Wilson",
+      "email": "ryan.wilson@platform.com",
+      "phone": "+1 (555) 890-1234",
+      "status": "active",
+      "assignedSocieties": [17, 18],
+      "lastActivity": "2025-01-25T11:20:00Z",
+      "createdAt": "2024-07-18T14:30:00Z",
+      "loginCount": 176,
+      "ticketsResolved": 98,
+      "recentActivities": [
+        {
+          "id": 29,
+          "action": "Processed utility payment",
+          "society": "Crystal Springs",
+          "timestamp": "2025-01-25T11:20:00Z",
+          "type": "approval"
+        },
+        {
+          "id": 30,
+          "action": "Resolved plumbing issue",
+          "society": "Maple Ridge Estates",
+          "timestamp": "2025-01-25T09:45:00Z",
+          "type": "resolution"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Lauren Miller",
+      "email": "lauren.miller@platform.com",
+      "phone": "+1 (555) 901-2345",
+      "status": "pending",
+      "assignedSocieties": [19, 20],
+      "lastActivity": "Never",
+      "createdAt": "2025-01-24T13:00:00Z",
+      "loginCount": 0,
+      "ticketsResolved": 0,
+      "recentActivities": []
+    },
+    {
+      "id": 20,
+      "name": "Jason Thompson",
+      "email": "jason.thompson@platform.com",
+      "phone": "+1 (555) 012-3456",
+      "status": "active",
+      "assignedSocieties": [1, 2, 3, 4, 5],
+      "lastActivity": "2025-01-25T15:45:00Z",
+      "createdAt": "2024-05-25T10:15:00Z",
+      "loginCount": 445,
+      "ticketsResolved": 289,
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
+      "recentActivities": [
+        {
+          "id": 31,
+          "action": "Approved major renovation",
+          "society": "Green Valley Residency",
+          "timestamp": "2025-01-25T15:45:00Z",
+          "type": "approval"
+        },
+        {
+          "id": 32,
+          "action": "Updated security protocols",
+          "society": "Palm Grove Society",
+          "timestamp": "2025-01-25T13:30:00Z",
+          "type": "update"
+        }
+      ]
+    }
+  ]
+} 
